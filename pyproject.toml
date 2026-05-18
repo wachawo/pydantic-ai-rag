@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pydantic-ai-memory"
+version = "0.0.0"
+description = "Memory layer for pydantic-ai agents. Part of the pydantic-ai-toolkits collection."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "wachawo", email = "kpbico6ou@gmail.com" }
+]
+keywords = ["pydantic", "pydantic-ai", "memory", "rag", "llm", "agents"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/wachawo/pydantic-ai-memory"
+Repository = "https://github.com/wachawo/pydantic-ai-memory"
+Issues = "https://github.com/wachawo/pydantic-ai-memory/issues"
+Toolkits = "https://github.com/wachawo/pydantic-ai-toolkits"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pydantic_ai_memory"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/pydantic_ai_memory",
+    "README.md",
+    "LICENSE",
+    "pyproject.toml",
+]
